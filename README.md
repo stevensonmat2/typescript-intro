@@ -42,6 +42,12 @@ In VSCode, open the "File" menu and click "Open Folder..." if that option is the
 
 Alternatively, if you're working in a command line, navigate to this same folder in your terminal.
 
+### Installing the compiler
+
+To install the TypeScript compiler in this project folder, run the command `npm i` in your terminal; if you're using VSCode, use the terminal in the bottom panel.
+
+To check the installation, you can run the command `npx tsc -- --version` to see the version of the compiler you have installed.
+
 ### Reading the code
 
 The main source code file is `src/Main.ts`, which we'll explore and add some code to in lecture. It exposes a function called `main1`, which takes in two strings as input, prints each one to the browser developer console, and then updates the text of an element on the webpage.
