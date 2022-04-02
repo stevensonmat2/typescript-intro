@@ -24,7 +24,7 @@ If you don't already have Firefox, I recommend installing it to use for debuggin
 
 Visual Studio Code (or VSCode) is a free open-source cross-platform development environment for TypeScript and many other languages. It is historically related to Microsoft's paid product called Visual Studio, but it's built from an entirely different codebase and offers a much more lightweight feature set.
 
-If you don't already have a favorite development environment for programming, VSCode is a good one to start with, and it's especially well-suited for TypeScript. If you do already have a favorite environment, you can most likely find TypeScript plugins
+If you don't already have a favorite development environment for programming, VSCode is a good one to start with, and it's especially well-suited for TypeScript. If you do already have a favorite environment, you can most likely find TypeScript plugins for your IDE.
 
 Open <https://code.visualstudio.com> and download and run the installer.
 
