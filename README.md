@@ -6,7 +6,7 @@ This is a sample project to help walk you through the development process that w
 
 I recommend installing these tools on your own computer; they're all fully free and easy to uninstall after the course is over if you don't want them anymore. If you don't have a suitable computer to use, you may be able to get one on loan from the [PSU library](https://library.pdx.edu/study-spaces-computers/equipment), or you can use the Linux lab computers on campus.
 
-Any text editor and web browser will be okay for working through the assignments in this course, but I'm only going to be providing instructions for compiling in VSCode or a terminal, and for debugging in VSCode and Firefox. If you're using a different editor or browser and you encounter problems, Katherine and I can try to help, but we can't make any guarantees.
+Any text editor and web browser will be okay for working through the assignments in this course, but I'm only going to be providing instructions for compiling in VSCode or a terminal, and for debugging in VSCode and Chrome. If you're using a different editor or browser and you encounter problems, Katherine and I can try to help, but we can't make any guarantees.
 
 ### Installing Node.js
 
@@ -16,11 +16,17 @@ If you're working on the Linux lab computers, skip this step - they already have
 
 Open <https://nodejs.org> and click the link to download the LTS version for your operating system. Run the installer.
 
-### Installing Firefox (optional, but recommended)
+### Installing Chrome
 
-If you don't already have Firefox, I recommend installing it to use for debugging. Open <https://www.mozilla.org/en-US/firefox/download/thanks>, which should start the download automatically, and then run the installer.
+If you already have Chrome, that will work fine for debugging.
 
-### Installing Visual Studio Code (optional, but recommended)
+If you don't already have Chrome, I recommend installing Chromium, which is the open-source version of Chrome without some of Google's modifications to the browser. You can download Chromium for your operating system at this link: <https://chromium.woolyss.com>.
+
+In these instructions, the name "Chrome" will be used to refer to both Chrome and Chromium, since they both behave the same for our purposes.
+
+The debugger will probably work with other Chromium-based browsers like Edge and Brave as well, but I won't be providing instructions for them.
+
+### Installing Visual Studio Code
 
 Visual Studio Code (or VSCode) is a free open-source cross-platform development environment for TypeScript and many other languages. It is historically related to Microsoft's paid product called Visual Studio, but it's built from an entirely different codebase and offers a much more lightweight feature set.
 
@@ -29,8 +35,6 @@ If you don't already have a favorite development environment for programming, VS
 Open <https://code.visualstudio.com> and download and run the installer.
 
 Run VSCode; it should be in your start menu or apps list. If you're on a Unix-like system, the command name is `code`.
-
-Open the "Extensions" tab in the left sidebar: the icon looks like four little squares with one square disconnected from the other three. Search "Debugger for Firefox" and click the "Install" button on the first result.
 
 ### Opening the project
 
@@ -66,7 +70,7 @@ To run the project after building it, you can open the `html/index.html` file in
 
 You'll see two input boxes, which correspond to the `input1` and `input2` arguments to the `main1` function in `src/Main.ts`; a button, which runs the `main1` function with the given input; and an area for output, which is visually updated with the contents of `output.innerText` when `main1` runs.
 
-### Debugging the project (requires VSCode and Firefox)
+### Debugging the project
 
 You can interactively debug the project in VSCode by opening the "Run" menu and choosing "Start Debugging". This will open a special Firefox window connected to VSCode.
 

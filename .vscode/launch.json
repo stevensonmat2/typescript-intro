@@ -5,66 +5,26 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Debug in Firefox",
-      "type": "firefox",
+      "name": "Debug in Chrome",
+      "preLaunchTask": "npm: build",
+      "type": "pwa-chrome",
       "request": "launch",
-      "reAttach": true,
       "file": "${workspaceFolder}/html/index.html",
-      "suggestPathMappingWizard": true,
-      "pathMappings": [
-        {
-          "url": "webpack://intro/src",
-          "path": "${workspaceFolder}/src"
-        },
-        {
-          "url": "webpack:///src",
-          "path": "${workspaceFolder}/src"
-        },
-        {
-          "url": "webpack:///~/",
-          "path": "${webRoot}/node_modules/"
-        },
-        {
-          "url": "webpack:///./~/",
-          "path": "${webRoot}/node_modules/"
-        },
-        {
-          "url": "webpack:///./",
-          "path": "${webRoot}/"
-        },
-        {
-          "url": "webpack:///src/",
-          "path": "${webRoot}/src/"
-        },
-        {
-          "url": "webpack:///node_modules/",
-          "path": "${webRoot}/node_modules/"
-        },
-        {
-          "url": "webpack:///webpack",
-          "path": null
-        },
-        {
-          "url": "webpack:///(webpack)",
-          "path": null
-        },
-        {
-          "url": "webpack:///pages/",
-          "path": "${webRoot}/pages/"
-        },
-        {
-          "url": "webpack://[name]_[chunkhash]/node_modules/",
-          "path": "${webRoot}/node_modules/"
-        },
-        {
-          "url": "webpack://[name]_[chunkhash]/",
-          "path": null
-        },
-        {
-          "url": "webpack:///",
-          "path": ""
-        }
-      ]
+      "outFiles": [
+        "${workspaceFolder}/build/*.js"
+      ],
+      "webRoot": "${workspaceFolder}",
+    },
+    {
+      "name": "Debug in Edge",
+      "type": "pwa-msedge",
+      "preLaunchTask": "npm: build",
+      "request": "launch",
+      "file": "${workspaceFolder}/html/index.html",
+      "outFiles": [
+        "${workspaceFolder}/build/*.js"
+      ],
+      "webRoot": "${workspaceFolder}",
     }
   ]
 }
